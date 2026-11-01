@@ -1,0 +1,27 @@
+# Compiled output
+/tmp
+
+# System Files
+Thumbs.db
+.DS_Store
+__MACOSX
+
+# IDE and editors
+.idea
+.vscode
+
+# Logs
+/logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+/node_modules
+
+# Lock files
+package-lock.json
+/package-lock.json
+/yarn.lock
+
+# dotenv environment variables file
+.env
