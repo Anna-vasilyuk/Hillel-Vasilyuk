@@ -37,7 +37,7 @@ console.log("Середнє арифметичне:", averageNumber);
 
 //(№ 5)
 //Розкласти по цифрах п'ятизначне число і вивести у вихідному порядку через пробіл (використовувати оператор “розподіл по модулю” (%)
-let fiveNumber = 12345;
+const fiveNumber = 12345;
 
 const remainderNumber5 = fiveNumber % 10;
 fiveNumber = Math.floor(fiveNumber / 10);
