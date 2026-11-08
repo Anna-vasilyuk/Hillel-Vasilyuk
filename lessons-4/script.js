@@ -50,7 +50,7 @@ if (numberN > 0) {
   }
 }
 if (numberN === 1) {
-  console.log("Число можна отримати");
+  console.log("Число отримати можливо");
 } else {
-  console.log("Число не можна отримати");
+  console.log("Число отримати не можливо");
 }
