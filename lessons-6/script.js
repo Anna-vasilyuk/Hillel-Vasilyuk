@@ -59,21 +59,19 @@ let users = [
   },
 ];
 
-const balanceUser = users.map((item) => item.balance);
+const phones = users
+  .filter((item) => {
+    const newBalance = item.balance.replace("$", "");
+    const nubmBalance = newBalance.replace(",", "");
+    const finalBalance = Number(nubmBalance);
+    return finalBalance > 2000;
+  })
+  .map((item) => item.phone);
 
-const filteredUsers = users.filter((item) => {
-  const balance = item.balance;
-  const newBalance = balance.replace("$", "");
-  const nubmBalance = newBalance.replace(",", "");
-  const finalBalance = Number(nubmBalance);
-  return finalBalance > 2000;
-});
-
-const phones = filteredUsers.map((item) => item.phone);
 console.log(phones);
 
-const sumUser = balanceUser.reduce((acc, item) => {
-  const newBalance = item.replace("$", "");
+const sumUser = users.reduce((acc, item) => {
+  const newBalance = item.balance.replace("$", "");
   const nubmBalance = newBalance.replace(",", "");
   const finalBalance = Number(nubmBalance);
   return acc + finalBalance;
