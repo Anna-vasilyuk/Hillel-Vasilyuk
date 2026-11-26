@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДЗ 9. Голосування за смайлики</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="voting">
+      <div>
+        <button>💅</button>
+        <p>0</p>
+      </div>
+      <div>
+        <button>🤔</button>
+        <p>0</p>
+      </div>
+      <div>
+        <button>🥶</button>
+        <p>0</p>
+      </div>
+      <div>
+        <button>🥳</button>
+        <p>0</p>
+      </div>
+      <div>
+        <button>🧐</button>
+        <p>0</p>
+      </div>
+    </div>
+    <p class="hint">Тисни на смайлик</p>
+
+    <script>
+      let vot = document.getElementById("voting");
+      console.log(vot);
+
+      vot.addEventListener("click", function (event) {
+        if (event.target.tagName === "BUTTON") {
+          let counter = event.target.nextElementSibling;
+
+          counter.textContent = Number(counter.textContent) + 1;
+        }
+      });
+    </script>
+  </body>
+</html>

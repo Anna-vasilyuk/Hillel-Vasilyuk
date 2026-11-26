@@ -1,0 +1,29 @@
+#voting {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  border: 2px solid #5e7961;
+  border-radius: 15px;
+  padding: 20px;
+  width: fit-content;
+  margin: 50px auto 0;
+}
+
+#voting button {
+  border: none;
+  background: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#voting p {
+  text-align: center;
+}
+
+.hint {
+  text-align: center;
+  color: #5e7961;
+  font-size: 16px;
+  margin-top: 12px;
+}
